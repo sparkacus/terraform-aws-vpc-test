@@ -108,3 +108,7 @@ output "route_table_id" {
 output "cidr_block" {
   value = aws_vpc.default.cidr_block
 }
+
+output aws_instance {
+  value       = aws_instance.default
+}

@@ -100,9 +100,9 @@ module "peering-ireland-paris" {
   }
 }
 
-output aws_instance_id_london {value       = module.london.aws_instance.id}
-output aws_instance_private_ip_london {value       = module.london.aws_instance.private_ip}
-output aws_instance_id_ireland {value       = module.ireland.aws_instance.id}
-output aws_instance_private_ip_ireland {value       = module.ireland.aws_instance.private_ip}
-output aws_instance_id_paris {value       = module.paris.aws_instance.id}
-output aws_instance_private_ip_paris {value       = module.paris.aws_instance.private_ip}
+output "aws_instance_id_london" { value = module.london.aws_instance.id }
+output "aws_instance_private_ip_london" { value = module.london.aws_instance.private_ip }
+output "aws_instance_id_ireland" { value = module.ireland.aws_instance.id }
+output "aws_instance_private_ip_ireland" { value = module.ireland.aws_instance.private_ip }
+output "aws_instance_id_paris" { value = module.paris.aws_instance.id }
+output "aws_instance_private_ip_paris" { value = module.paris.aws_instance.private_ip }
